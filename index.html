@@ -5,35 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+
+    <!-- fontawesome cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Immaculate Nyambura - Portfolio</title>
   </head>
   <body>
-    <nav>
-      <header>
-        <h3>Immaculate Nyambura</h3>
-        <div class="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#resume">Resume</a>
-          <a href="#contacts">Contacts</a>
-        </div>
-      </header>
-    </nav>
+    <header id="header">
+      <h3>Imma. <span>DEV</span></h3>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#contacts">Contacts</a>
+      </nav>
+    </header>
 
     <section id="home" class="home-content">
-      <img src="./images/IMG_20220714_124923.jpg" alt="" />
+      <img src="./images/IMG_20220714_124923.jpg" alt="profile image" />
       <div class="home-desc">
         <h3>Hello world, I’m Immaculate Nyambura</h3>
         <p>
-        Hi there! I am Immaculate,a software development learner at power learn project academy.
-        I have been in plp for almost 2 months,now as a web developer.
-        I will be taking HTML,CSS and Javascript and hopefully graduate in 3 months to come.
+          Hi there! I am Immaculate,a software development learner at power
+          learn project academy. I have been in plp for almost 2 months,now as a
+          web developer. I will be taking HTML,CSS and Javascript and hopefully
+          graduate in 3 months to come.
         </p>
-        <a href="#contact"><button>Contacts</button></a>
+        <div class="home-desc-btn">
+          <a href="#about" class="btn">Resume</a>
+          <a href="#contacts" class="btn">Contacts</a>
+        </div>
       </div>
     </section>
 
@@ -41,10 +53,10 @@
       <div class="about-desc">
         <h3>Get To Know Me</h3>
         <p>
-          Hi there! I am Immaculate! You might also know me as web development learner at PLP.
-          I have been taking all the software programming languages for the past 1 month,
-          now a full time web development learner.
-         
+          Hi there! I am Immaculate! You might also know me as web development
+          learner at PLP. I have been taking all the software programming
+          languages for the past 1 month, now a full time web development
+          learner.
         </p>
       </div>
       <h3>About Me</h3>
@@ -54,14 +66,15 @@
       <h3>Resume</h3>
       <div class="resume-desc">
         <h3>Education</h3>
-          <p>
-          I have been taking all the software programming languages for the past 1 month,
-          Hi there! I am Immaculate! You might also know me as web development learner at PLP.
-          now a full time web development learner
-         </p>
+        <p>
+          I have been taking all the software programming languages for the past
+          1 month, Hi there! I am Immaculate! You might also know me as web
+          development learner at PLP. now a full time web development learner
+        </p>
         <h3>FreeLancing</h3>
         <p>
-          Hi there! I am Immaculate! You might also know me as a web development learner.
+          Hi there! I am Immaculate! You might also know me as a web development
+          learner.
         </p>
         <h3>Skills</h3>
         <li>Front end</li>
@@ -73,29 +86,46 @@
       <h3>Contact Me</h3>
       <div class="contact-desc">
         <p>Here to learn the best coding skills ever!</p>
-        <form
-  action="https://formspree.io/f/mnqeapgn"
-  method="POST"
->
-  <input type="text" name="name" placeholder="Name" required /><br /><br />
-  <input type="email" name="email" placeholder="Email" required /><br /><br />
-  <input type="text" name="age" placeholder="Age" required /><br /><br />
-  <input type="text" name="subject" placeholder="Subject" required /><br /><br />
-  <textarea
-    name="message"
-    id=""
-    cols="30"
-    rows="10"
-    placeholder="Message"
-    required
-  ></textarea
-  ><br /><br />
-  <button type="submit">Send</button>
-</form>
+        <form action="https://formspree.io/f/mnqeapgn" method="POST">
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+          /><br /><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+          /><br /><br />
+          <input
+            type="text"
+            name="age"
+            placeholder="Age"
+            required
+          /><br /><br />
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            required
+          /><br /><br />
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Message"
+            required
+          ></textarea
+          ><br /><br />
+          <button type="submit">Send</button>
+        </form>
         <!-- <form
         action="https://formspree.io/f/mnqeazjd"
-        method="POST" > 
-         
+        method="POST" >
+
           <input type="text" placeholder="Name" /><br /><br />
           <input type="text" placeholder="Email" /><br /><br />
           <input type="Age" placeholder="Age" /><br /><br />
