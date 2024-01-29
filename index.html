@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
 
-    <!-- fontawesome cdn -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="shortcut icon"
+      href="./images/IMG_20220714_124923.jpg"
+      type="image/x-icon"
     />
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -30,7 +30,7 @@
   <body>
     <header id="header">
       <div class="header-container">
-        <h3>Imma. <span>DEV</span></h3>
+        <a href="#home" class="logo"> &lt;Imma/&gt; </a>
         <div class="menu-bar">
           <i class="ri-menu-line"></i>
         </div>
@@ -50,37 +50,54 @@
       <a href="#contacts">Contacts</a>
     </nav>
 
-    <!-- <section id="home" class="home-content">
-      <img src="./images/IMG_20220714_124923.jpg" alt="profile image" />
-      <div class="home-desc">
-        <h3>Hello world, I’m Immaculate Nyambura</h3>
-        <p>
-          Hi there! I am Immaculate,a software development learner at power
-          learn project academy. I have been in plp for almost 2 months,now as a
-          web developer. I will be taking HTML,CSS and Javascript and hopefully
-          graduate in 3 months to come.
+    <section id="home" class="home-content container">
+      <img
+        src="./images/IMG_20220714_124923.jpg"
+        alt="profile image"
+        class="profile-image"
+      />
+      <div class="home-descr">
+        <h3 class="title">Hello👋,</h3>
+        <h1 class="title">I’m Immah</h1>
+        <p class="subtitle">
+          I’m passionate about software development and I’m always looking for
+          opportunities to improve my skills.
         </p>
-        <div class="home-desc-btn">
+        <div class="home-descr-btn">
           <a href="#about" class="btn">Resume</a>
           <a href="#contacts" class="btn">Contacts</a>
         </div>
       </div>
-    </section> -->
+    </section>
+    <!-- <p>
 
-    <!-- <section id="about" class="about-content">
+      learn project academy. I have been in plp for almost 2 months,now as a
+      web developer. I will be taking HTML,CSS and Javascript and hopefully
+      graduate in 3 months to come.
+    </p> -->
+
+    <section id="about" class="about-content container section">
+      <h1 class="title">About Me</h1>
       <div class="about-desc">
-        <h3>Get To Know Me</h3>
-        <p>
-          Hi there! I am Immaculate! You might also know me as web development
-          learner at PLP. I have been taking all the software programming
-          languages for the past 1 month, now a full time web development
-          learner.
+        <h3 class="title">Get To Know Me</h3>
+        <p class="subtitle">
+          Hi there! I am Immaculate, based in Kilifi Kenya 🇰🇪
+        </p>
+        <p class="subtitle">
+          a software development learner at
+          <a
+            href="https://plpacademy.powerlearnproject.org/"
+            target="_blank"
+            class="blue-text"
+            >Power Learn Project (PLP)</a
+          >
+          I am taking Software Programming related courses for the past 1 month,
+          now a full time Web Development Learner.
         </p>
       </div>
-      <h3>About Me</h3>
-    </section> -->
+    </section>
 
-    <!-- <section id="resume" class="about-content">
+    <section id="resume" class="about-content container section">
       <h3>Resume</h3>
       <div class="resume-desc">
         <h3>Education</h3>
@@ -99,7 +116,7 @@
         <li>Typescript</li>
         >
       </div>
-    </section> -->
+    </section>
 
     <!-- <section id="contacts" class="contact-content">
       <h3>Contact Me</h3>
