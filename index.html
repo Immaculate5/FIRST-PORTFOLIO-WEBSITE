@@ -5,123 +5,170 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+
     <link
+      rel="shortcut icon"
+      href="./images/IMG_20220714_124923.jpg"
+      type="image/x-icon"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
     />
     <title>Immaculate Nyambura - Portfolio</title>
   </head>
   <body>
-    <nav>
-      <header>
-        <h3>Immaculate Nyambura</h3>
-        <div class="nav-links">
+    <header id="header">
+      <div class="header-container">
+        <a href="#home" class="logo"> &lt;Imma/&gt; </a>
+        <div class="menu-bar">
+          <i class="ri-menu-line"></i>
+        </div>
+        <nav class="nav-links">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#resume">Resume</a>
           <a href="#contacts">Contacts</a>
-        </div>
-      </header>
+        </nav>
+      </div>
+    </header>
+    <!-- mobile nav-bar -->
+    <nav class="mobile-nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#contacts">Contacts</a>
     </nav>
 
-    <section id="home" class="home-content">
-      <img src="./images/IMG_20220714_124923.jpg" alt="" />
-      <div class="home-desc">
-        <h3>Hello world, I’m Immaculate Nyambura</h3>
-        <p>
-        Hi there! I am Immaculate,a software development learner at power learn project academy.
-        I have been in plp for almost 2 months,now as a web developer.
-        I will be taking HTML,CSS and Javascript and hopefully graduate in 3 months to come.
+    <section id="home" class="home-content container">
+      <img
+        src="./images/IMG_20220714_124923.jpg"
+        alt="profile image"
+        class="profile-image"
+      />
+      <div class="home-descr">
+        <h3 class="title">Hello👋,</h3>
+        <h1 class="title">I’m Immah</h1>
+        <p class="subtitle">
+          I’m passionate about software development and I’m always looking for
+          opportunities to improve my skills.
         </p>
-        <a href="#contact"><button>Contacts</button></a>
+        <div class="home-descr-btn">
+          <a href="#about" class="btn">Resume</a>
+          <a href="#contacts" class="btn">Contacts</a>
+        </div>
       </div>
     </section>
+    <!-- <p>
 
-    <section id="about" class="about-content">
+      learn project academy. I have been in plp for almost 2 months,now as a
+      web developer. I will be taking HTML,CSS and Javascript and hopefully
+      graduate in 3 months to come.
+    </p> -->
+
+    <section id="about" class="about-content container section">
+      <h1 class="title">About Me</h1>
       <div class="about-desc">
-        <h3>Get To Know Me</h3>
-        <p>
-          Hi there! I am Immaculate! You might also know me as web development learner at PLP.
-          I have been taking all the software programming languages for the past 1 month,
-          now a full time web development learner.
-         
+        <h3 class="title">Get To Know Me</h3>
+        <p class="subtitle">
+          Hi there! I am Immaculate Nyambura, based in Kilifi Kenya 🇰🇪
+        </p>
+        <p class="subtitle">
+          A Software Development Learner at
+          <a
+            href="https://plpacademy.powerlearnproject.org/"
+            target="_blank"
+            class="blue-text"
+            >Power Learn Project (PLP)</a
+          >
+          I am taking Programming related courses for the past 3 months, now a
+          full time Web Development Learner.
         </p>
       </div>
-      <h3>About Me</h3>
     </section>
 
-    <section id="resume" class="about-content">
-      <h3>Resume</h3>
+    <section id="resume" class="resume container section">
+      <h1 class="title">Resume</h1>
       <div class="resume-desc">
-        <h3>Education</h3>
-          <p>
-          I have been taking all the software programming languages for the past 1 month,
-          Hi there! I am Immaculate! You might also know me as web development learner at PLP.
-          now a full time web development learner
-         </p>
-        <h3>FreeLancing</h3>
-        <p>
-          Hi there! I am Immaculate! You might also know me as a web development learner.
+        <h3 class="title">Education</h3>
+        <p class="subtitle">
+          I have been taking all the software programming languages for the past
+          1 month, Hi there! I am Immaculate! You might also know me as web
+          development learner at PLP. now a full time web development learner
         </p>
-        <h3>Skills</h3>
-        <li>Front end</li>
-        <li>Typescript</li>
-        >
+        <h3 class="title">FreeLancing</h3>
+        <p class="subtitle">
+          Hi there! I am Immaculate! You might also know me as a web development
+          learner.
+        </p>
+        <h3 class="title">Skills</h3>
+        <div class="skills-icons">
+          <i class="ri-html5-line"></i>
+          <i class="ri-css3-line"></i>
+          <i class="ri-javascript-line"></i>
+          <i class="ri-database-2-line"></i>
+        </div>
       </div>
     </section>
-    <section id="contacts" class="contact-content">
-      <h3>Contact Me</h3>
+
+    <section id="contacts" class="contact-content container section">
+      <h1 class="title">Contact Me</h1>
       <div class="contact-desc">
-        <p>Here to learn the best coding skills ever!</p>
-        <form
-  action="https://formspree.io/f/mnqeapgn"
-  method="POST"
->
-  <input type="text" name="name" placeholder="Name" required /><br /><br />
-  <input type="email" name="email" placeholder="Email" required /><br /><br />
-  <input type="text" name="age" placeholder="Age" required /><br /><br />
-  <input type="text" name="subject" placeholder="Subject" required /><br /><br />
-  <textarea
-    name="message"
-    id=""
-    cols="30"
-    rows="10"
-    placeholder="Message"
-    required
-  ></textarea
-  ><br /><br />
-  <button type="submit">Send</button>
-</form>
-        <!-- <form
-        action="https://formspree.io/f/mnqeazjd"
-        method="POST" > 
-         
-          <input type="text" placeholder="Name" /><br /><br />
-          <input type="text" placeholder="Email" /><br /><br />
-          <input type="Age" placeholder="Age" /><br /><br />
-          <input type="text" placeholder="Subject" /><br /><br />
+        <p class="subtitle">
+          Have a Question or Suggestion? Feel Free to
+          <span class="blue-text">Contact me</span>
+        </p>
+        <form action="" method="POST" class="form__wrapper">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your Name* (required)"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email* (required)"
+            required
+          />
           <textarea
-            name=""
+            name="message"
             id=""
             cols="30"
             rows="10"
-            placeholder="Message"
-          ></textarea
-          ><br /><br />
-          <button>Send</button>
-        </form> -->
+            placeholder="Your Message* (required)"
+          ></textarea>
+          <input type="submit" class="btn" />
+        </form>
       </div>
     </section>
 
-    <section class="footer">
-      <div class="footer-content">
+    <footer class="footer section">
         <div class="social-media">
-          <a href=""><i class="fa fa-facebook"></i></a>
-          <a href=""><i class="fa fa-linkedin"></i></a>
-          <a href=""><i class="fa fa-instagram"></i></a>
+          <a href=""><i class="ri-linkedin-line"></i></i></a>
+          <a href=""><i class="ri-facebook-line"></i></a>
+          <a href=""><i class="ri-instagram-line"></i></i></a>
         </div>
-        <p>Built by Immaculate Nyambura</p>
+        <p class="subtitle">Built with ❤️ by
+          <a href="https://github.com/Immaculate5/Portfolio" target="_blank">Immaculate Nyambura</a>
+        </p>
+        <p class="co">&copy; 2024</p>
       </div>
-    </section>
+    </fo>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
   </body>
 </html>

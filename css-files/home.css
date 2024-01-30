@@ -1,0 +1,169 @@
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 3rem 0;
+}
+
+.profile-image {
+  border-radius: 39% 61% 49% 51% / 48% 69% 31% 52%;
+  width: 40%;
+  box-shadow: var(--box-shadow);
+}
+
+.home-descr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 1rem 4rem;
+
+  /* border: orange 1px solid; */
+}
+
+.home-descr h1 {
+  font-size: 1.8rem;
+}
+
+.home-descr h3,
+.home-descr p,
+.home-descr-btn a {
+  font-size: 1.2rem;
+}
+
+.home-descr p {
+  text-align: center;
+}
+
+.home-descr-btn a {
+  margin-left: 1rem;
+}
+
+/* media queries */
+/* xs */
+@media (min-width: 475px) {}
+
+/* sm */
+@media (min-width: 640px) {
+  .home-descr {
+    gap: 2rem;
+  }
+
+  .home-descr h1 {
+    font-size: 2rem;
+  }
+
+  .home-descr h3,
+  .home-descr p,
+  .home-descr-btn a {
+    font-size: 1.4rem;
+  }
+
+  .home-descr p {
+    text-align: center;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .home-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .home-descr {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .home-descr p {
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .home-content {
+    flex-direction: row;
+    gap: 3rem;
+
+    padding: 5rem 0;
+  }
+
+  .home-descr h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .home-descr h3,
+  .home-descr p,
+  .home-descr-btn a {
+    font-size: 1.8rem;
+  }
+
+  .home-descr p {
+    text-align: left;
+    margin-bottom: 4rem;
+  }
+
+  .home-descr-btn a {
+    margin-left: 2rem;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .home-content {
+    gap: 5rem;
+  }
+
+  .home-descr h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .home-descr h3,
+  .home-descr p,
+  .home-descr-btn a {
+    font-size: 2rem;
+  }
+
+  .home-descr p {
+    text-align: left;
+    margin-bottom: 5rem;
+  }
+
+  .home-descr-btn a {
+    margin-left: 2.5rem;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .home-content {
+    gap: 7rem;
+  }
+
+  .home-descr h1 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .home-descr h3,
+  .home-descr p,
+  .home-descr-btn a {
+    font-size: 3rem;
+  }
+
+  .home-descr p {
+    margin-bottom: 7rem;
+  }
+}
